@@ -13,9 +13,7 @@ def main():
         response = requests.get(url) 
         soup = BeautifulSoup(response.text, 'html.parser')
         title = soup.find('h1', {'id': 'firstHeading'}).text
-
-        content = soup.find('div', {'class': 'mw-parser-output'}).text    
-
+        
         print()
         print('-' * 50)
         print(f'Would you like to read about {title} ?')
