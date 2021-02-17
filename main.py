@@ -3,7 +3,6 @@ import requests
 from wiki_parser import articleParsing
 
 
-
 def main():
     print('Hey, I\'m a simple wiki parser!')
     print('I\'ll give you some title of an artircle, and you must anwswer would u like to read it or not!')
